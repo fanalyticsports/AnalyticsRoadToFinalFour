@@ -8,12 +8,15 @@ Tableau Public Profile @Fanalyticsports
 https://public.tableau.com/profile/fanalyticsports#!/vizhome/shared/DN9PJ5JFF
 
 
-
 Blog Entry and How to's:
-
-
-
 
 Step 1: Data Gathering
 
-We used a combination of sources for this from http://www.sports-reference.com/cbb to API calls from Sportsradar. For more information on this API follow our upcoming blog on this but below is a basic call to grab the teams and loop through each team to gather the information. There is some pretty cool data in these feeds
+We used a combination of sources for this from http://www.sports-reference.com/cbb to API calls from Sportsradar. For more information on this API follow our upcoming blog on this but below is a basic call to grab the teams and loop through each team to gather the information. There is some pretty cool data in these feeds. 
+
+Use TeamStats.py
+
+
+Step 2: Data Wrangling & Geocoding
+
+For this we switched to R to use it's geolocation packaging. With the game and the following data points: Home_City_State, Away_City_State, and Stadium_City_State we calculate the distance as a crow flies for each game. 
