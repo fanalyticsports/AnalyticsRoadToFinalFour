@@ -20,3 +20,18 @@ Use TeamStats.py
 Step 2: Data Wrangling & Geocoding
 
 For this we switched to R to use it's geolocation packaging. With the game and the following data points: Home_City_State, Away_City_State, and Stadium_City_State we calculate the distance as a crow flies for each game. 
+
+
+Step 3: Create Visualization Using Data and Spatial File
+
+We start with creating a geojson spatial file which Tableau can incorporate. This is my first time using geojson so I was glad I found http://geojson.io to help create my location map. I used my cvs to create the json copied this into Atom. Formatted as a .geojson and within minutes I had my first .geojson file. 
+
+With that complete we moved on to uploading the spatial file and the NCAA location team data to begin developing our Viz.
+
+Step 4: Complete the Viz in Tableau 
+
+This part was pretty easy with some suggestions and tips from a few other Viz experts we were able to use the cool new pathing feature in 10 and bring across the logos. The spatial file became a nice to have but with the logos and everything else all we really needed was the city points which become the stadiums on the map.
+
+Through in a few basic scatter charts and some action items and the dashboard is nice interactive way to travel the Final Four and follow your team and the effect distance had on them. 
+
+Enjoy. 
